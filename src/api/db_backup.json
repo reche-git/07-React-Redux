@@ -1,0 +1,29 @@
+{
+  "libraries": [
+    {
+      "id": 1,
+      "name": "React",
+      "year": 2013
+    },
+    {
+      "id": 2,
+      "name": "Vue",
+      "year": "2014"
+    },
+    {
+      "id": 3,
+      "name": "Angular",
+      "year": "2016"
+    },
+    {
+      "id": 4,
+      "name": "Svelte",
+      "year": "2016"
+    },
+    {
+      "id": 5,
+      "name": "JQuery",
+      "year": "2006"
+    }
+  ]
+}
