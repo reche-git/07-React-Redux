@@ -17,11 +17,11 @@ const CartItem = ({ data, delOneFromCart, delAllFromCart, addToCart }) => {
           <h3 className="subtitle">${price} per unit</h3>
         </div>
         <div className="counterCart">
-          <div className="btn" onClick={() => delOneFromCart(id)}>
+          <div className="btnShopping" onClick={() => delOneFromCart(id)}>
             -
           </div>
           <div className="countCart">{quantity}</div>
-          <div className="btn" onClick={() => addToCart(id)}>
+          <div className="btnShopping" onClick={() => addToCart(id)}>
             +
           </div>
         </div>

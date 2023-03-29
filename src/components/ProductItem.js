@@ -2,7 +2,7 @@ const ProductItem = ({ data, addToCart }) => {
   let { id, name, price, image } = data;
 
   return (
-    <div className="card">
+    <div className="cardBody">
       <div className="imgBox">
         <img
           className="img"

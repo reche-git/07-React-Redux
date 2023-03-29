@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, clearCart, delFromCart } from "../actions/shoppingActions";
-import CartItem from "./CartItem";
+import { addToCart } from "../actions/shoppingActions";
+import { CartCheckout } from "./CartCheckout";
 import ProductItem from "./ProductItem";
 
 const ShoppingCart = () => {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const { products, cart } = state.shopping;
+  const { products } = state.shopping;
 
   return (
     <div>
@@ -19,23 +19,11 @@ const ShoppingCart = () => {
             key={product.id}
             data={product}
             addToCart={() => dispatch(addToCart(product.id))}
-            />
-            ))}
-      </article>
-      <h3>Cart</h3>
-      <article className="box">
-        {cart.map((item, index) => (
-          <CartItem
-          key={index}
-          data={item}
-          delOneFromCart={() => dispatch(delFromCart(item.id))}
-          delAllFromCart={() => dispatch(delFromCart(item.id, true))}
-          addToCart={() => dispatch(addToCart(item.id))}
           />
         ))}
-        <br />
-        <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
       </article>
+      <h3>Cart</h3>
+      <CartCheckout />
     </div>
   );
 };
