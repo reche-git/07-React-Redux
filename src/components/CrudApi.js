@@ -177,17 +177,29 @@ export const CrudApi = () => {
           <p>The special thing about this exercise:</p>
           <ul style={{ textAlign: "initial" }}>
             <li>
-              A personalized hook made entirely on JavaScript . Witch means the
-              compatibility with allo JS Frameworks (Vue, Angular, Ruby, etc.).
+              A personalized fetch hook made entirely on JavaScript . Witch
+              means the compatibility with allo JS Frameworks.
             </li>
             <li>
-              The management of the fetch response as an object with three
-              properties, the data, the error and an state variable that will
-              manage the state of our loader.
+              The management of the response as an object with three properties,
+              data, error and an state variable that will manage the state of a
+              loader.
             </li>
-            <li>The reuse of the same Components.</li>
             <li>The use of Redux to organize the project!</li>
           </ul>
+          <hr />
+          <p>
+            Please run the command "npm run fake-api" to run the db stored in
+            the{" "}
+            <a
+              href="https://github.com/reche-git/07-React-Redux/blob/master/src/api/db.json"
+              rel="noreferrer"
+              target="_blank"
+            >
+              db.json file
+            </a>
+            .
+          </p>
           <hr />
         </div>
       </Modal>

@@ -3,7 +3,6 @@ import Counter from "./components/Counter";
 import { CrudApi } from "./components/CrudApi";
 import Modal from "./components/Modal";
 import ShoppingCart from "./components/ShoppingCart";
-import TeoriaRedux from "./components/TeoriaRedux";
 import { useModal } from "./hooks/useModal";
 import store from "./store";
 
