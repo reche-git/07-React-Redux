@@ -23,8 +23,10 @@ function App() {
           <ShoppingCart />
           <hr />
           <Counter />
-          <hr />
-          <TeoriaRedux />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </Provider>
 

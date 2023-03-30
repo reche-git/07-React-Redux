@@ -400,6 +400,7 @@ li {
   grid-template-columns: repeat(6, minmax(auto, 400px));
   gap: 1rem;
   justify-content: center;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -433,6 +434,11 @@ li {
     height: 100px;
     width: auto;
   }
+
+  .Cart-Items .img {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -449,6 +455,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
 }
 
 .CartContainer {
