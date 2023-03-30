@@ -11,6 +11,7 @@ export const CartCheckout = () => {
 //   console.log(cart);
 
   return (
+    <>
     <div className="bodyContainer">
       <div className="CartContainer">
         <div className="HeaderCart">
@@ -23,13 +24,13 @@ export const CartCheckout = () => {
         <article className="box">
           {cart.map((item, index) => (
             <CartItem
-              key={index}
-              data={item}
-              delOneFromCart={() => dispatch(delFromCart(item.id))}
-              delAllFromCart={() => dispatch(delFromCart(item.id, true))}
-              addToCart={() => dispatch(addToCart(item.id))}
+            key={index}
+            data={item}
+            delOneFromCart={() => dispatch(delFromCart(item.id))}
+            delAllFromCart={() => dispatch(delFromCart(item.id, true))}
+            addToCart={() => dispatch(addToCart(item.id))}
             />
-          ))}
+            ))}
           <br />
         </article>
         <div className="checkout">
@@ -44,5 +45,6 @@ export const CartCheckout = () => {
         </div>
       </div>
     </div>
+            </>
   );
 };

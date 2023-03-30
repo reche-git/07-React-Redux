@@ -12,6 +12,7 @@ const ShoppingCart = () => {
   return (
     <div>
       <h2>Shopping Cart</h2>
+      <hr style={{width:"60%", color: "#fff"}}/>
       <h3>Products</h3>
       <article className="box grid-responsive">
         {products.map((product) => (
@@ -22,7 +23,6 @@ const ShoppingCart = () => {
           />
         ))}
       </article>
-      <h3>Cart</h3>
       <CartCheckout />
     </div>
   );

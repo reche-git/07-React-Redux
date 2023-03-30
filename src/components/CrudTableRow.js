@@ -18,7 +18,7 @@ export const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
           className="btn btn-outline-info ms-3 "
           onClick={() => deleteData(id)}
         >
-          <i className="fas fa-trash-alt"></i>
+          🗑️
         </button>
       </td>
     </tr>
